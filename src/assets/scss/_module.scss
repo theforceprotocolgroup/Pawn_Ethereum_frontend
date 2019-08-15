@@ -1,0 +1,125 @@
+
+#cnzz_stat_icon_1275326480 {
+  display: none;
+}
+
+
+.m-loader-box {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .loading-text {
+        padding-top: 8px;/*no*/
+        font-size: 13px;/*no*/
+    }
+    @-webkit-keyframes line-spin-fade-loader {
+        50% {
+            opacity: .3
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    @keyframes line-spin-fade-loader {
+        50% {
+            opacity: .3
+        }
+
+        100% {
+            opacity: 1
+        }
+    }
+
+    .line-spin-fade-loader {
+        display: inline-block;
+        position: relative;
+        top: -20px;/*no*/
+        left: -4px;/*no*/
+        transform: scale(0.5);
+    }
+
+    .line-spin-fade-loader > div {
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        position: absolute;
+        width: 5px;/*no*/
+        height: 15px;/*no*/
+
+        border-radius: 2px;/*no*/
+        margin: 2px;/*no*/
+        background-color: #999;
+    }
+
+    .line-spin-fade-loader > div:nth-child(1) {
+        top: 20px;/*no*/
+        left: 0;
+        -webkit-animation: line-spin-fade-loader 1.2s -.84s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.84s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(2) {
+        top: 13.64px;/*no*/
+        left: 13.64px;/*no*/
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: line-spin-fade-loader 1.2s -.72s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.72s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(3) {
+        top: 0;
+        left: 20px;/*no*/
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-animation: line-spin-fade-loader 1.2s -.6s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.6s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(4) {
+        top: -13.64px;/*no*/
+        left: 13.64px;/*no*/
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-animation: line-spin-fade-loader 1.2s -.48s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.48s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(5) {
+        top: -20px;/*no*/
+        left: 0;
+        -webkit-animation: line-spin-fade-loader 1.2s -.36s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.36s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(6) {
+        top: -13.64px;/*no*/
+        left: -13.64px;/*no*/
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: line-spin-fade-loader 1.2s -.24s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.24s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(7) {
+        top: 0;
+        left: -20px;/*no*/
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-animation: line-spin-fade-loader 1.2s -.12s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s -.12s infinite ease-in-out
+    }
+
+    .line-spin-fade-loader > div:nth-child(8) {
+        top: 13.64px;/*no*/
+        left: -13.64px;/*no*/
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out;
+        animation: line-spin-fade-loader 1.2s 0s infinite ease-in-out
+    }
+}
+

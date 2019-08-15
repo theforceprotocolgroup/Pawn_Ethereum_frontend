@@ -1,0 +1,46 @@
+/**
+ * @file
+ * @auth jinguangguo
+ * @date 2016/10/17
+ */
+
+$imgDir: '../images/';
+$g-background: #f2f2f2;
+$g-pages: '/src/pages';
+$g-padding: 15px;
+$g-line: #e5e5e5;
+$g-ash: #999;
+$g-blue: #6888d9;
+$g-light: #ddd;
+$g-img: '../images';
+
+
+/**
+ *
+ *  v2.5.0 颜色规范
+ *  2017/02/28
+ *
+ **/
+
+$button: #3d3f51; // 按钮正常可点状态
+$button-active: #464b65; // 按钮按下状态
+$button-disable: #ccc; // 按钮不可点状态
+$button-text: #fff; // 按钮文字
+$button-bg: #334ac1;
+
+$button-sub: #fff; // 第二个按钮，通常是取消按钮
+$button-sub-active: #f8f8f8; // 第二个按钮按下状态
+$button-sub-text: #3d3f51; // 第二个按钮文字
+
+$button-bottom: #fff; // 底部通栏按钮颜色
+$button-bottom-text: #5580f7; // 底部通栏按钮文字颜色
+$button-bottom-del-text: #f84747; // 底部通栏删除按钮文字颜色
+
+$text-button: #5580f7;
+$text-button-grey: #333;
+
+
+$color-link: #6088fe;
+$color-link-hover: #ed8a00; // 输入框悬停颜色
+$color-link-dark: #555353;
+//$color-border-hover:#595efc;

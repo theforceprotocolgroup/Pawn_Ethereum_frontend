@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+
+// 张树垚 2015-12-29 19:29:47 创建
+// H5微信端 --- components-block
+
+
+.block {
+	position: relative;
+	@include border-top(#ddd, 'before');
+	@include border-bottom(#ddd);
+	background-color: #fff;
+	margin-bottom: .1rem;
+	&:first-child {
+		margin-top: .44rem;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	&-item {
+		@include height(.96rem);
+		margin-left: .3rem;
+		padding-right: .3rem;
+		@include border-bottom(#ddd);
+		display: flex;
+		align-items: center;
+		position: relative;
+		&:last-child {
+			border-bottom: none;
+		}
+	
+	}
+	&-text {
+		display: flex;
+		padding: 0 .3rem;
+		align-items:center;
+	}
+	&-out {
+		@extend .block-item;
+		border-bottom: none;
+		margin-top: .16rem;
+	}
+	&-label {
+		flex: 1;
+		font-size: .32rem;
+		color: #181818;	
+	}
+	&-arrow {
+		margin-left: .24rem;
+		width: .2rem;
+		height: .2rem;
+		border-width: 0 .04rem .04rem 0;
+		border-color: #ccc;
+		border-style: solid;
+		transform: rotate(-45deg);
+	}
+}

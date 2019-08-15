@@ -1,0 +1,28 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.img-center {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}

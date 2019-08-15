@@ -1,0 +1,72 @@
+/**
+ * @file
+ * @auth jinguangguo
+ * @date 2016/10/17
+ */
+
+.ui-title {
+    font-weight: normal;
+    font-size: 14px;/*no*/
+    line-height: 1.7;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.ui-btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 15px;/*no*/
+    width: 400px;/*no*/
+    min-width: 64px;/*no*/
+    height: 50px;/*no*/
+    line-height: 50px;/*no*/
+    background-color: $button-bg;
+    border-radius: 4px;/*no*/
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;/*no*/
+    cursor:pointer;
+    &:hover {
+        background-color: $color-link-hover;
+        color: #fff;
+    }
+    //&:active {
+    //    background-color: $color-link-dark;
+    //    color: #fff;
+    //}
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &--small {
+        height: 24px;/*no*/
+        line-height: 24px;/*no*/
+    }
+
+    &[disabled] {
+        pointer-events: none;
+        box-shadow: none;
+        opacity: .65;
+    }
+}
+
+.ui_a {
+    color: $text-button-grey;
+    text-decoration: none;
+    transition: color 0.4s;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    &:link,
+    &:visited {
+        text-decoration: none;
+    }
+    &:hover {
+        color: $color-link-hover;
+        text-decoration: none;
+    }
+    &.gray {
+        color: #666;
+    }
+}

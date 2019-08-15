@@ -1,0 +1,180 @@
+@charset 'utf-8';
+
+
+// 张树垚 2015-12-17 15:03:20 创建
+// H5微信端 输入框样式
+
+%close{  //close点击时扩大范围
+    content: '';
+    display: block;
+    padding: .3rem;
+    margin-left: -.15rem;
+    margin-top: -.15rem;
+}
+
+.text {
+
+	$img: '../../../grb-common/scss/images';
+
+	flex: 1;
+	display: flex;
+	align-items: center;
+	font-size: .32rem;
+	position: relative;
+	@include height(.88rem);
+	width: 100%;
+
+	&-label {
+		width: 1.8rem;
+		color: #181818;
+		font-size: .32rem;
+		white-space: nowrap;
+	}
+	&-box {
+		$box: & + '';
+		flex: 1;
+		height: 100%;
+		padding-left: .3rem;
+		padding-right: .04rem;
+		&-select {
+			@extend #{$box};
+			position: relative;
+			&:after {
+				content: '';
+				@include bgimg($img + '/5.png', .28rem, .16rem);
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: transformY(-50%);
+			}
+		}
+	}
+	$input: '';
+	&-input {
+		$input: & + '';
+		display: block;
+		@include square(100%);
+		box-sizing: border-box;
+		&-ident {
+			@extend #{$input};
+			font-size: .28rem;
+		}
+	}
+	&-select {
+		@extend #{$input};
+		position: relative;
+		z-index: 1;
+	}
+	&-close {
+		@include bgimg($img + '/1.png', .3rem);
+		opacity: 0;
+		&.on {
+			opacity: 1;
+		}
+		margin-right: .1rem;
+		&:after{
+		    @extend %close;
+		}
+	}
+	&-cancel{
+		padding: 0 .1rem;
+		&:after{
+		}
+	}
+	&-eye {
+		@include bgimg($img + '/2.png', .38rem, .22rem);
+		margin-left: .3rem;
+		position: relative;
+		&.on {
+			@include bgimg($img + '/3.png', .38rem, .22rem);
+		}
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -180%;
+			left: -50%;
+			width: 200%;
+			height: 450%;
+		}
+	}
+	&-alert {
+		@include bgimg($img + '/4.png', .4rem);
+		margin-left: .3rem;
+	}
+	&-arrow-bottom {
+		@include bgimg($img + '/5.png', .28rem, .16rem);
+	}
+	&-safe {
+		$item: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		&-item {
+			$item: & + '';
+			flex: 1;
+			height: .04rem;
+			background-color: #ddd;
+			&:nth-child(2) {
+				margin: 0 .06rem;
+			}
+			&.on {
+				background-color: #29ddb7;
+			}
+		}
+		&.s1 {
+			#{$item + ':nth-child(1)'} { background-color: #29ddb7; }
+		}
+		&.s2 {
+			#{$item + ':nth-child(1)'} { background-color: #29ddb7; }
+			#{$item + ':nth-child(2)'} { background-color: #29ddb7; }
+		}
+		&.s3 {
+			#{$item + ':nth-child(1)'} { background-color: #29ddb7; }
+			#{$item + ':nth-child(2)'} { background-color: #29ddb7; }
+			#{$item + ':nth-child(3)'} { background-color: #29ddb7; }
+		}
+	}
+	&-tip {
+		&-top { // 顶部的提示
+			margin-top: .1rem;
+			padding-left: .3rem;
+			font-size: .22rem;
+			color: #999;
+		}
+		&-bottom { // 底下的提示
+            position: absolute;
+            top: 100%;
+            left: 0;
+			right: 0;
+			margin-top: .04rem;
+			color: #999;
+			font-size: .22rem;
+			line-height: .32rem;
+		}
+	}
+	&-button { // 按钮
+		margin: .68rem .3rem 0;
+		& ~ & {
+			margin-top: .3rem;
+		}
+	}
+	&-ident { // 验证码
+		@include square(2.56rem, 100%);
+		border-left: 1px solid #e5e5e5;
+		text-align: center;
+		margin-right: - .3rem;
+		font-size: .28rem;
+		width: 2.3rem;
+	}
+	&-bottom { // 页面底部的提示
+		margin-top: 2.6rem;
+		text-align: center;
+		white-space: nowrap;
+		color: #999;
+		line-height: 1.8;
+	}
+}
+

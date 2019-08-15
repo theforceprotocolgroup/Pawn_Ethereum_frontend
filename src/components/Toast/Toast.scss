@@ -1,0 +1,61 @@
+/**
+ * @file
+ * @auth jinguangguo
+ * @date 2017/1/9
+ */
+
+.comp-toast {
+
+    $zIndex_toast: 1000;
+    $height: 90px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $height;
+    line-height: $height;
+    z-index: $zIndex_toast;
+
+    //transition: all .4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: all .4s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0.98;
+
+    &--warning {
+        background-color: #f9c991;
+    }
+    &--success {
+        background-color: #61d6b4;
+    }
+    &--error {
+        background-color: #f57d77;
+    }
+
+    .toast-wrapper {
+        position: relative;
+        // width: 1184px;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        .close {
+            position: absolute;
+            right: -80px;
+            top: 28px;
+            line-height: 1;
+            cursor: pointer;
+            .icon-close {
+                font-size: 26px;
+            }
+        }
+    }
+    .toast-text{
+        font-size: 16px;
+    }
+
+    &.slide-fade-enter-active {
+        display: block;
+        transform: translateY(0);
+    }
+}

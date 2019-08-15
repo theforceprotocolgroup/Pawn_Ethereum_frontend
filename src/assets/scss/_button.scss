@@ -1,0 +1,48 @@
+@charset 'utf-8';
+
+
+// 张树垚 2015-12-17 14:46:05 创建
+// H5微信端 按钮样式
+
+
+.button {
+	display: block;
+	@include height(.86rem);
+	text-align: center;
+	background-color: $button; 
+	border-radius: .1rem;
+	font-size: .36rem;
+	color: $button-text;
+	&.disabled {
+		background-color: $button-disable; 
+		pointer-events: none;
+	}
+	&.error {
+		border-color: #ff5a6b;
+	}
+	&.white {
+		background-color: #fff;
+		color: #777;
+		border-color: #e5e5e5;
+		&.disabled {
+			color: #ccc;
+		}
+	}
+	&-sub {
+		@extend .button;
+		background-color: $button-sub;
+		color: $button-sub-text;
+	}
+	&-bottom {
+		$button: & + '';
+		position: absolute;
+		left: .3rem;
+		right: .3rem;
+		bottom: 1.28rem;
+		&2  {
+			@extend #{$button};
+			bottom: 2.34rem;
+		}
+	}
+}
+

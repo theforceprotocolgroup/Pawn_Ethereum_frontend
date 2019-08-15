@@ -1,0 +1,10 @@
+<div class="comp-toast"
+     id="compToast"
+     :class="isShow === true ? 'comp-toast--' + type + ' slide-fade-enter-active' : ''" ref="module">
+    <div class="toast-wrapper">
+        <div class="close" @click="hide()" v-if="type === 'error'">
+            <i class="icon icon-close"></i>
+        </div>
+        <span class="toast-text">{{content}}</span>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+// color
+$g-blue: #5580f7;			// 蓝色(文字, 按钮)
+$g-blue-border: #5977c5;	// 蓝色(按钮边框)
+$g-blue-chart: #3d70ee;		// 蓝色(图表文字)
+
+$g-safe: #29ddb7;			// 绿色(安全等级)
+// $g-red: #ff4238;			// 红色(增加)
+// $g-green: #1b9e19;			// 绿色(减少)
+$g-green-bill: #2acea2;		// 绿色(订单里的)
+
+$g-alert: rgba(0,0,0,.8);	// 黑透明(提示框背景)
+$g-dialog: rgba(0,0,0,.6);	// 黑透明(浮层背景)
+$g-input: #181818;			// 深黑(input之前说明文字)
+$g-black: #000;
+$g-dark: #333;				// 深黑(input之内文字, 普通文字)
+$g-gray: #565656;			// 灰色()
+$g-ash: #999;				// 灰色(昵称, 备注)
+$g-silver: #ccc;			// 浅灰(文字, 按钮不可用)
+$g-light: #ddd;				// 亮灰(线条, 背景)
+$g-line: #e5e5e5;			// 暗白(线条, 边框)
+$g-background: #f2f2f2;		// 暗白(背景)
+$g-white: #fff;				// 白色(按钮文字)
+$g-orange: #fda354;			// 橙色(官方)
+
+//after by kw
+$g-background-53: #f2f2f2; //背景颜色5月3号定
+$g-color333: #333333;
+$g-color999: #999999;
+$g-bordercolor: #f4f4f4;   //边框颜色
+
+$g-green: #2acea2;			// 绿色(6-15 bill更改)
+$g-red: #ff5a6b;			// 红色(6-15 bill更改)
+
+
+.silver { color: $g-silver !important; }
+.blue { color: $g-blue !important; }
+.red { color: $g-red !important; }
+.green { color: $g-green !important; }
+.gray { color: $g-gray !important; }
+.dark { color: $g-dark !important; }
+.ash { color: $g-ash !important; }
+.light { color: $g-light !important; }
+.input { color: $g-input !important; }
+.orange { color: $g-orange !important; }

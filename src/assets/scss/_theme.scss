@@ -1,0 +1,125 @@
+/**
+ * @file
+ * @auth jinguangguo
+ * @date 2016/10/17
+ */
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    text-size-adjust: none;
+}
+
+body {
+    font-size: 13px;/*no*/
+    line-height: 1.4;
+    //font-family: Helvetica, Arial, sans-serif;
+    font-family: Hiragino Sans gb, Microsoft YaHei;
+    //font-family: 'Microsoft YaHei', 'hiragino sans gb', 'Arial', sans-serif;
+    color: #333;
+    background-color: #f6f6f6;
+}
+div {
+  box-sizing: border-box;
+}
+
+
+body, input, select, textarea {
+    -webkit-font-smoothing: initial; // 抗锯齿
+    -moz-osx-font-smoothing: grayscale; // 抗锯齿
+}
+
+i, em, strong {
+    font-style: normal;
+}
+
+// a {
+//     color: $color-link;
+//     text-decoration: none;
+//     transition: color 0.4s;
+//     &:hover,
+//     &:active,
+//     &:link,
+//     &:visited {
+//         text-decoration: none;
+//     }
+//     &:hover {
+//         color: $color-link-hover;
+//         text-decoration: none;
+//     }
+//     //&:active {
+//     //    color: $color-link-dark;
+//     //}
+//     &.gray {
+//         color: #666;
+//     }
+// }
+
+// 表单
+input{
+    box-sizing: border-box;
+    border: 1px #dfdfdf solid;/*no*/
+    background-color: transparent;
+    outline: 0;
+    font-size: 12px;/*no*/
+    word-break: break-all;
+    //&:hover {
+    //    border: 1px $color-border-hover solid;
+    //}
+    &:focus {
+        // border: 1px $color-link-hover solid;
+        border:1px $button-bg solid;
+    }
+    &[readonly]:focus{
+        border: 1px #dfdfdf solid !important;
+    }
+    //&[disabled="disabled"] {
+    //    background-color: $color-bg;
+    //    &:hover {
+    //        border: 1px #ccc solid;
+    //    }
+    //    &:focus {
+    //        border: 1px #ccc solid;
+    //    }
+    //}
+}
+
+input {
+    box-sizing: border-box;
+
+
+    &[block] {
+        display: block;
+        width: 100%;
+    }
+}
+
+textarea {
+    display: block;
+    box-sizing: border-box;
+    border: 1px #dfdfdf solid;/*no*/
+    background-color: transparent;
+    outline: 0;
+    font-size: 12px;/*no*/
+    word-break: break-all;
+    padding: 8px;/*no*/
+    resize: none;
+
+    &:focus {
+        // border: 1px $color-link-hover solid;
+        border:1px $button-bg solid;/*no*/
+    }
+}
+
+button {
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 2px;/*no*/
+    &:focus {
+        outline: none;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #cbd1e3 !important;
+}
